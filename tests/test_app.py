@@ -28,6 +28,9 @@ class AppTest(IntegrationTestBase):
 
     def test_get_settings(self):
         self.assertSuccess(self.app.get('/settings'))
+        
+    def test_get_settings(self):
+        self.assertSuccess(self.app.get('/kahinahijaghari'))
 
     def test_post_settings(self):
         self.assertCreated(self.app.post('/settings', data=dict(
